@@ -1,0 +1,92 @@
+// import React, { useState } from 'react';
+// import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
+// import QRCode from 'react-native-qrcode-svg';
+
+// const QRCodeScreen: React.FC = () => {
+//   const [code, setCode] = useState('');
+
+//   const handleSubmit = () => {
+//     // Handle the submit action here
+//     Alert.alert('Submitted Code', code);
+//   };
+
+//   return (
+//     <View style={styles.container}>
+//       <View style={styles.qrContainer}>
+//         <QRCode value="https://example.com" size={200} color="black" backgroundColor="white" />
+//       </View>
+//       <Text style={styles.title}>Scan this QR code:</Text>
+      
+//       <TextInput
+//         style={styles.input}
+//         placeholder="Enter your code"
+//         value={code}
+//         onChangeText={setCode}
+//         keyboardType="default"
+//       />
+      
+//       <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+//         <Text style={styles.buttonText}>Submit</Text>
+//       </TouchableOpacity>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     backgroundColor: 'white',
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     padding: 16,
+//   },
+//   qrContainer: {
+//     marginBottom: 20,
+//     borderWidth: 5,
+//     borderColor: '#007BFF',
+//     borderRadius: 10,
+//     padding: 8,
+//     backgroundColor: '#fff',
+//     shadowColor: '#000',
+//     shadowOffset: { width: 0, height: 4 },
+//     shadowOpacity: 0.1,
+//     shadowRadius: 8,
+//     elevation: 5,
+//   },
+//   title: {
+//     fontSize: 24,
+//     fontWeight: 'bold',
+//     color: '#333',
+//     marginBottom: 20,
+//   },
+//   input: {
+//     height: 40, // Reduced height
+//     borderColor: '#ccc',
+//     borderWidth: 1,
+//     borderRadius: 8,
+//     paddingHorizontal: 12, // Reduced padding
+//     marginBottom: 20,
+//     width: '80%', // Adjusted width
+//     backgroundColor: 'white',
+//     fontWeight:'bold',
+//   },
+//   button: {
+//     backgroundColor: '#007BFF',
+//     borderRadius: 8,
+//     paddingVertical: 10, // Reduced padding
+//     paddingHorizontal: 20, // Reduced padding
+//     shadowColor: '#000',
+//     shadowOffset: { width: 0, height: 4 },
+//     shadowOpacity: 0.1,
+//     shadowRadius: 8,
+//     elevation: 2,
+//   },
+//   buttonText: {
+//     color: '#fff',
+//     fontSize: 16,
+//     fontWeight: '600',
+//     textAlign: 'center',
+//   },
+// });
+
+// export default QRCodeScreen;
